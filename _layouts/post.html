@@ -1,0 +1,87 @@
+---
+layout: default
+---
+<div class="main-nav">
+
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <a class="navbar-brand abhishek" href="/">Abhishek Nalwaya</a>
+                <ul class="nav navbar-nav">
+
+                    <li><a href="#blog" class="colapse-menu1">Blog</a></li>
+                    <li><a href="#contact" class="colapse-menu1">Contact</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+</div>
+<!-- Section : About -->
+<section id="about" class="section">
+    <div class="container">
+
+        <!-- Section Title -->
+        <div class="section-title post">
+            <h1>{{ page.title }}</h1>
+            <span class="border"></span>
+
+            <p class="meta">{{ page.date | date_to_string }}</p>
+        </div>
+        <!-- Section Title End -->
+
+
+        <div class="row">
+            <div class="col-md-8">
+                {{ content }}
+                <div id="disqus_thread"></div>
+                <script type="text/javascript">
+                    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                    var disqus_shortname = 'nalwaya'; // required: replace example with your forum shortname
+
+                    /* * * DON'T EDIT BELOW THIS LINE * * */
+                    (function() {
+                        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+            </div>
+
+            <div class="col-md-4">
+                <a class="twitter-timeline" href="https://twitter.com/nalwayaabhishek"
+                   data-widget-id="447641165693587456">Tweets by @nalwayaabhishek</a>
+                <script>!function (d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                    if (!d.getElementById(id)) {
+                        js = d.createElement(s);
+                        js.id = id;
+                        js.src = p + "://platform.twitter.com/widgets.js";
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }
+                }(document, "script", "twitter-wjs");</script>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</section>
+<!-- Section : About end -->
+
+
