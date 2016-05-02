@@ -10,7 +10,7 @@ desc: "React and Redux best practices"
 
 Writing a Front end app is difficult, let me reiterate writing good quality front end app is difficult. It is easy to mess up with your frontend application as it grow. There are so many ways to do a single things in JavaScript, saying which one is best is difficult. And over that Javascript world is moving in such a fast phase, the amount of frameworks and libraries that appear and disappear every week is very large. 
 
-React and Redux is a good attempt to follow some good design principle. 
+`React` and `Redux` is a good attempt to follow some good design principle. 
 
 I am working on ReactJS from around a year now, done lot of mistakes and lot refectoring in my apps. I prefer to use [Redux](https://github.com/reactjs/redux), [Webpack](https://webpack.github.io/), [Babel](https://babeljs.io/) and [ES2015](https://babeljs.io/docs/learn-es2015/) with React. Based on my experince concluded few best practices which help to maintain your code for large based React based application, listing few of them.
 
@@ -129,11 +129,11 @@ It is good to have more stateless component in your app, it increase resubility 
 Check out this -> [Egghead tutorial on stateless component](https://egghead.io/lessons/react-building-stateless-function-components-new-in-react-0-14)
 
 
-## Be safe with PROP TYPES 
+## Be safe with PROP TYPES and getDefaultProps
 
-Prop let components communicate with each other component. A parent component pass it’s children named prop values, which the child can then use in its internal logic. `propTypes` keep your component safe from unexpected data. [Don't pass props to state - Props in getInitialState Is an Anti-Pattern](http://facebook.github.io/react/tips/props-in-getInitialState-as-anti-pattern.html)
+`prop` let components communicate with each other component. A parent component pass it’s children named prop values, which the child can then use in its internal logic. `propTypes` keep your component safe from unexpected data. 
 
-Also for any propType that isn't required, always set it in [getDefaultProps](https://facebook.github.io/react/docs/reusable-components.html#default-prop-values)
+Also for any propType that isn't required, always set it in [getDefaultProps](https://facebook.github.io/react/docs/reusable-components.html#default-prop-values). WE can define default values for your props in a very declarative way using getDefaultProps. 
 
 
 I love to hear your experinces and pattern which you have used in your app with reactJS. 
