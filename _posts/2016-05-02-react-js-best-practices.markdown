@@ -48,7 +48,7 @@ Just to give you a example if you have following nested state:
 {% endhighlight %}
 
 
-Refector this to: 
+Refactor this to: 
 
 {% highlight javascript %}
 {
