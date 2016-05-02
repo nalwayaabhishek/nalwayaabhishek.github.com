@@ -14,7 +14,7 @@ React and Redux is a good attempt to follow some good design principle.
 
 I am working on ReactJS from around a year now, done lot of mistakes and lot refectoring in my apps. I prefer to use [Redux](https://github.com/reactjs/redux), [Webpack](https://webpack.github.io/), [Babel](https://babeljs.io/) and [ES2015](https://babeljs.io/docs/learn-es2015/) with React. Based on my experince concluded few best practices which help to maintain your code for large based React based application, listing few of them.
 
-##Avoid Nested state
+## Avoid Nested state
 
 It's better to have state value as flat instead of tree structure. Having your state nested it’d be hard to check whether your state changed or not. You’d be forced to make a deep equality check, because when objects are compared using reference equality you can’t be sure whether the next state is changed.
 
@@ -76,7 +76,7 @@ In case you are serving these value from backed API, then best place to normaliz
 If you want to normize the JSON in frontent you can also use npm module [normalizr](https://github.com/gaearon/normalizr). 
 
 
-##Immutability 
+## Immutability 
 
 `Immutability` is an concept, very popular in functional programming world. Making state of your component immutable will make your code simple to understand, as the state changes are more explicit and easy to test. 
 
@@ -104,7 +104,7 @@ We can see that while update value of key `b`, the `map1` is not mutated if you 
 
 React also provide few [Immutability Helpers](https://facebook.github.io/react/docs/update.html)
 
-##Centralize state 
+## Centralize state 
 
 Storing all your state at one place help in maintain the app's state easily because there is a single source of truth. That means that your app is always reflecting the current state. It make debugging easy and help in faster development. 
 
