@@ -88,7 +88,7 @@ Since immutable is a concept and need to follow by team. There will be possibili
 {% highlight javascript %}
 // This is how you create maps in ES6
 let map1 = new Map({a:1, b:2, c:3});
-let map2 = map.set('foo', 123);
+let map2 = map.set('b', 50);
 map1.get('b'); // 50
 map2.get('b'); // 50
 
